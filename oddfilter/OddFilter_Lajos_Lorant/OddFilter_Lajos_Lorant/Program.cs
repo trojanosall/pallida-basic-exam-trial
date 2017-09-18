@@ -8,6 +8,7 @@ namespace OddFilter_Lajos_Lorant
 {
     class Program
     {
+        static void Main(string[] args)
         {
             // Create an OddFilter function that takes a list as a parameter,
             // and returns a new list with every odd element from the orignal list
@@ -19,13 +20,28 @@ namespace OddFilter_Lajos_Lorant
             Console.ReadLine();
         }
 
-        private static void PrintList(List<int> list)
+        private static void OddFilter()
         {
-            foreach (int element in list)
+            List<int> OriginalList = new List<int> { };
+            List<int> oddElements = new List<int> { };
+        
+        for (int i = 0; i < OriginalList.Count; i++)
+			{
+            if (OriginalList[i]%2 != 0)
+	        {
+             oddElements.Add(OriginalList(i));
+	        }
+            }
+         return new List<int>(newlist);
+        }
+
+        private static void PrintList(List<int> list)        
+        {
+        foreach (int element in OriginalList)
             {
-                if (List[i]%2 != 0)
-                Console.Write("{0} ", element);
+            Console.Write("{0} ", element);
             }
         }
-    }
+
+     }   
 }
