@@ -8,7 +8,7 @@ namespace NameFrommail_Lajos_Lorant
 {
     class Program
     {
-        public static string NameFromEmail(string Mail)
+        public static void NameFromEmail()
         {
             Console.WriteLine("Please give me your email address in the following format (firstName.lastName@exam.com): ");
             string email = Console.ReadLine();
@@ -21,8 +21,7 @@ namespace NameFrommail_Lajos_Lorant
             lastName = char.ToUpper(lastName[0]) + lastName.Substring(1);
 
             Console.WriteLine(lastName + " " + firstName);
-
-            return NameFromEmail(string);
+                        
         }
 
         static void Main(string[] args)
@@ -32,7 +31,7 @@ namespace NameFrommail_Lajos_Lorant
             //and returns a string that represents the user name in the following format: lastName firstName
             //example: "elek.viz@exam.com" for this input the output should be: "Viz Elek"
             //accents does not matter 
-            Console.WriteLine(NameFromEmail("elek.viz@exam.com"));
+            NameFromEmail();
             Console.ReadLine();
 
         }
