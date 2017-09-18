@@ -20,7 +20,7 @@ namespace OddFilter_Lajos_Lorant
             Console.ReadLine();
         }
 
-        private static void OddFilter()
+        private static void OddFilter(List<int> list)
         {
             List<int> OriginalList = new List<int> { };
             List<int> oddElements = new List<int> { };
@@ -32,7 +32,7 @@ namespace OddFilter_Lajos_Lorant
              oddElements.Add(OriginalList(i));
 	        }
             }
-         return new List<int>(newlist);
+         return new List<int>(oddElements);
         }
 
         private static void PrintList(List<int> list)        
