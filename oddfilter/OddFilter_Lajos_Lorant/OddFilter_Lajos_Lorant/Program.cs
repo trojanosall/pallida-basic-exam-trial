@@ -23,13 +23,13 @@ namespace OddFilter_Lajos_Lorant
         private static void OddFilter(List<int> list)
         {
             List<int> OriginalList = new List<int> { };
-            List<int> oddElements = new List<int> { };
-        
+                    
         for (int i = 0; i < OriginalList.Count; i++)
 			{
             if (OriginalList[i]%2 != 0)
 	        {
-             oddElements.Add(OriginalList(i));
+            List<int> oddElements = new List<int> { };
+            oddElements.Add(OriginalList[i]);
 	        }
             }
          return new List<int>(oddElements);
