@@ -1,11 +1,13 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace OddFilter
+namespace OddFilter_Lajos_Lorant
 {
     class Program
     {
-        static void Main(string[] args)
         {
             // Create an OddFilter function that takes a list as a parameter,
             // and returns a new list with every odd element from the orignal list
@@ -21,7 +23,7 @@ namespace OddFilter
         {
             foreach (int element in list)
             {
-                if (list[i]%2 != 2)
+                if (List[i]%2 != 0)
                 Console.Write("{0} ", element);
             }
         }
